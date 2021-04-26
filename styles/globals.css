@@ -14,3 +14,57 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#app {
+  padding:100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.test {
+  font-weight:bold;
+}
+
+.header {
+  background: url('../images/Indvillage-header.jpg') center;
+  background-size: cover;
+}
+
+/**#post2 div:nth-child(2), #post3 div:nth-child(2), #post5 div:nth-child(2){
+  padding-bottom: 4rem !important;
+}**/
+
+.container {
+  width:88% !important;
+}
+
+.flexnav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width : 1200px) {
+
+/* Styles */
+
+    #post0, #post1, #post2, #post3, #post4, #post5 {
+
+    flex-basis: 50%;
+
+    }
+}
+
+@media (max-width : 750px) {
+
+/* Styles */
+
+    #post0, #post1, #post2, #post3, #post4, #post5 {
+
+    flex-basis: 100%;
+
+
+    }
+  }  
