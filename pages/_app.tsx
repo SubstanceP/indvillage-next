@@ -1,5 +1,6 @@
 import React, { InsHTMLAttributes } from 'react';
 import "../styles/globals.css";
+import "../styles/materialize.css"
 
 // Components
 import NavBar from './components/NavBar';

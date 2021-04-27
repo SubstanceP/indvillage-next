@@ -1,5 +1,6 @@
-import { Dialog } from '@material-ui/core'
+import { Dialog, Grid } from '@material-ui/core'
 import * as React from 'react'
+import { Button } from '@material-ui/core'
 
 // Typing
 interface CardProps {
@@ -20,7 +21,7 @@ export const Card = (props: CardProps, state: CardState) => {
     setModalOpen(false)
   }
   return (
-    <div className="col s4 m4" id={props.id}>
+    <div className="col s4" id={props.id}>
       <Dialog open={modalOpen} onClose={closeModal}>
         <div>{props.post.content.rendered}</div>
       </Dialog>
@@ -36,10 +37,9 @@ export const Card = (props: CardProps, state: CardState) => {
           className="card-content"
           dangerouslySetInnerHTML={{__html: props.post.excerpt.rendered}}></div>
         <div className="card-action">
-          <button onClick={openModal} type="submit">
+          <Button color="primary" onClick={openModal} type="submit">
             {props.post.title.rendered}
-          </button>
-          <a onClick={openModal}>{props.post.title.rendered}</a>
+          </Button>
         </div>
       </div>
     </div>
