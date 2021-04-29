@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# To Use
+
+`git clone`
+`npm install`
+`yarn dev`
+
+# Headless Wordpress with React for returement home websites
+
+* Next.js used primarely for SEO as the site's compltexity does not pose a mimatch with create-react-app
+
+## PROS of headless approach
+
+* technically challenged clients can edit content with ease in the Wordpress WSIWYG editor, which auto-updates the React project.  
+* developers are able to create web applications (SPAs, PWAs) from Wordpress generated content
+* multiple server locations provides smooth development process
+
+***********************************************************************
+
+*NEXT.JS DEFAULT README*
 
 ## Getting Started
 
