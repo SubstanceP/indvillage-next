@@ -6,6 +6,8 @@ import "../styles/materialize.css"
 import NavBar from './components/NavBar';
 import HeaderContent from './components/HeaderContent';
 import CardContainer from './components/CardContainer';
+import Form from './components/Form';
+import ContactForm from './components/ContactForm';
 
 export default class App extends React.Component {
     render() {
@@ -16,6 +18,7 @@ export default class App extends React.Component {
                     <HeaderContent />
                 </header>
                     <CardContainer />
+                    <ContactForm />
             </React.Fragment>
         )
     }

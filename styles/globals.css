@@ -41,7 +41,7 @@ a {
 
 .flexnav{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   margin-top: 20px;
 }
 
