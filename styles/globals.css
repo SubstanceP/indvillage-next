@@ -31,6 +31,10 @@ a {
   background-size: cover;
 }
 
+.card-image:hover {
+  cursor:pointer;
+}
+
 /**#post2 div:nth-child(2), #post3 div:nth-child(2), #post5 div:nth-child(2){
   padding-bottom: 4rem !important;
 }**/

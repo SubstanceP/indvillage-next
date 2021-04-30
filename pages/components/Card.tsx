@@ -31,9 +31,10 @@ export const Card = (props: CardProps, state: CardState) => {
     <div className="col s4" id={props.id}>
 
       <div className="card" id="test">
-        <div className="card-image">
+        <div className="card-image" onClick={openModal}>
           {props.post._embedded['wp:featuredmedia'] ? (
-            <img src={props.post._embedded['wp:featuredmedia'][0].source_url} />
+            // TODO: Fix alt
+            <img alt={props.post.title.rendered} src={props.post._embedded['wp:featuredmedia'][0].source_url} />
           ) : (
             ''
           )}
@@ -52,7 +53,6 @@ export const Card = (props: CardProps, state: CardState) => {
         <DialogContent dividers>
           <Typography variant="h6">
           {props.post.content.rendered}
-
           </Typography>
         </DialogContent>
         <DialogActions>
