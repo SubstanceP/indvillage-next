@@ -18,7 +18,9 @@ export default class App extends React.Component {
                     <HeaderContent />
                 </header>
                     <CardContainer />
+                <footer>
                     <ContactForm />
+                </footer>
             </React.Fragment>
         )
     }
