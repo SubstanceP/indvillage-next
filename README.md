@@ -1,17 +1,25 @@
-# To Use
+## Headless Wordpress template built with React for retirement home websites
 
-`git clone`
-`npm install`
-`yarn dev`
+### Stack
+*Next.js (REACT.js w/ Server Side Rendering)
+    - SSR SEO > CSR SEO
+    - Next.js MPA routing built-in functionality 
+*JAMSTACK
+*Wordpress REST API via axios
 
-# Headless Wordpress with React for returement home websites
 
-* Next.js used primarely for SEO as the site's compltexity does not pose a mimatch with create-react-app
+# Getting Started
+
+```bash
+git clone <url>
+npm i
+yarn dev
+```
 
 ## PROS of headless approach
 
-* technically challenged clients can edit content with ease in the Wordpress WSIWYG editor, which auto-updates the React project.  
-* developers are able to create web applications (SPAs, PWAs) from Wordpress generated content
+*clients without progamming knowledge can edit content with ease in the Wordpress WSIWYG editor, which auto-updates the React project.  
+*developers are able to create web applications (SPAs, MPAs, PWAs) from Wordpress generated content
 * multiple server locations provides smooth development process
 
 ***********************************************************************
@@ -40,8 +48,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+* [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
