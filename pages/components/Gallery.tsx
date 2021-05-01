@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+/**import React, { useState, useCallback } from "react";
 import { render } from "react-dom";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from './photos';
@@ -36,5 +36,5 @@ export const Gallery = (props: GalleryProps, state: GalleryState) => {
       </ModalGateway>
     </div>
   );
-}
+}**/
 
