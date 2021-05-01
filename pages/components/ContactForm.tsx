@@ -28,23 +28,6 @@ export default class ContactForm extends Component<ContactFormProps, ContactForm
             message: "",
             requestType: '',
             status: "Submit"
-<<<<<<< HEAD
-        }
-        render() {
-    return(
-    <div className="container">
-        <div className="row">
-            <form className="col s12" autoComplete="off">
-                <TextField id="standard-basic" label="Standard" />
-                <TextField id="filled-basic" label="Filled" variant="filled" />
-                <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-
-
-
-
-                
-            </form>
-=======
         };
 
         this.handleChangeName = this.handleChangeName.bind(this);
@@ -95,10 +78,10 @@ export default class ContactForm extends Component<ContactFormProps, ContactForm
 
     render() {
         return(
-        <div className="container">
+        <div className="container contact-form">
             <div className="row">
                 <form className="col s12" autoComplete="off" onSubmit={this.handleSubmit}>
-                    <FormLabel>Contact Us</FormLabel>
+                    <FormLabel id="form-label">Contact Us</FormLabel>
                     <FormHelperText id="form-text">We’d love to hear from you. Please call, email or send us a message using the form below.</FormHelperText>
                     <br />
                     <FormControl component="fieldset" id="napervilleLocation" className="location">
@@ -201,7 +184,6 @@ export default class ContactForm extends Component<ContactFormProps, ContactForm
                     <Button type="submit" >Submit</Button>
                 </form>
             </div>
->>>>>>> 603ec3ce6446818c9214be3e89c9651f88fa41f2
         </div>
         )
 }

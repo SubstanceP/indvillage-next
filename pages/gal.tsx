@@ -5,9 +5,11 @@ import "../styles/materialize.css"
 // Components
 import NavBar from './components/NavBar';
 import HeaderContent from './components/HeaderContent';
-import CardContainer from './components/CardContainer';
-import Form from './components/Form';
 import ContactForm from './components/ContactForm';
+import Gallery from './components/Gallery';
+
+
+
 
 export default class App extends React.Component {
     render() {
@@ -17,8 +19,10 @@ export default class App extends React.Component {
                     <NavBar />
                     <HeaderContent />
                 </header>
-                    <CardContainer />
+                    <Gallery />
+                <footer>
                     <ContactForm />
+                </footer>
             </React.Fragment>
         )
     }

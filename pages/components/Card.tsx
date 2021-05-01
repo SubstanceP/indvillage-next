@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 
 
-// Typing
+// ~~~AATP~~~~
 interface CardProps {
   post: any // this is some big object getting sent down from CardContainer
   id: string
@@ -18,8 +18,11 @@ interface CardState {
   modalOpen: boolean
 }
 
+// Functional Component for Card, instantiating prop and state variables
 export const Card = (props: CardProps, state: CardState) => {
+  //modalOpen refers to state while setModalOpen is 
   const [modalOpen, setModalOpen] = React.useState(false)
+  //
   const openModal = (e: any) => {
     console.log('opening modal')
     setModalOpen(true)
@@ -28,8 +31,7 @@ export const Card = (props: CardProps, state: CardState) => {
     setModalOpen(false)
   }
   return (
-    <div className="col s4" id={props.id}>
-
+    <div className="col s4" id={props.id}> 
       <div className="card" id="test">
         <div className="card-image" onClick={openModal}>
           {props.post._embedded['wp:featuredmedia'] ? (
@@ -39,11 +41,14 @@ export const Card = (props: CardProps, state: CardState) => {
             ''
           )}
         </div>
+        <div className="card-title">
+        {props.post.title.rendered}
+        </div>
         <div
           className="card-content"
           dangerouslySetInnerHTML={{__html: props.post.excerpt.rendered}}></div>
         <div className="card-action">
-          <Button variant="outlined" color="primary" onClick={openModal}>
+          <Button className="card-button" variant="outlined" onClick={openModal}>
             {props.post.title.rendered}
           </Button>
       <Dialog onClose={closeModal} maxWidth={'lg'} open={modalOpen}>

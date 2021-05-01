@@ -57,10 +57,10 @@ export default class CardContainer extends React.Component<CardContainerProps, C
         return (
             <React.Fragment>
                 <div className="row">
-                    <div className="container" style={{"lineHeight":"1.76rem"}}>
+                    <div className="container mission">
                         <h2>Independence Village</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        <p>Now, more than ever, upholding top notch senior living standards is crucial for both clients and their families, for piece of mind in the midst of such uncertain times.  Our communities implemented early safeguards to ensure our healthy environment remained that way, and our exceptional staff and management have done the impossible: to date our family of communities remain entirely <em>Covid free</em>. It’s essential to have experienced leadership facilitate a safe atmosphere in which clients not only feel comfortable, they feel at home</p>
+                        <p>Independence Village and seniors are a match made in heaven! After 35 years of meeting their needs, exceeding their expectations, and becoming, arguably, the most trusted name in senior living, we think there is much to celebrate. Fresh interiors, bright, inspiring colors, and modern updates are some of the changes taking place, but what won’t be changing is our family’s commitment to you and your family – that’s carved in stone.
                         </p>
                     </div>
                 </div>  

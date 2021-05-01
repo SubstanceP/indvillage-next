@@ -10,7 +10,7 @@ export default class HeaderContent extends React.Component {
                             <h3 style={{"textAlign": "center",
                                         "marginTop": "1.66em",
                                         "color": "white",
-                                        "font-family": "sans-serif",
+                                        "font-family": "time",
                                         "line-height": "1.66em"}}>
                                         Experience<br />
                                         Knowledge<br />
