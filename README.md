@@ -58,3 +58,115 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### gallery.tsx 
+
+```import React, { useState, useCallback } from "react";
+import { render } from "react-dom";
+import Carousel, { Modal, ModalGateway } from "react-images";
+import CarouselProps from "react-images";
+import { photos } from "../photos"
+
+
+interface GalleryProps{
+  photos: any// this is some big object getting sent down from CardContainer
+  index: any 
+  event: boolean
+  views: number
+ 
+}
+interface GalleryState {
+  viewerIsOpen: boolean
+  openLightbox: boolean
+}
+
+c
+
+export const Gallery = (props: GalleryProps, state: GalleryState) => {
+  const [currentImage, setCurrentImage] = React.useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = React.useState(false);
+
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
+
+  return (
+    <div>
+      <Gallery photos={photos} onClick={openLightbox} />
+      <ModalGateway>
+        {viewerIsOpen ? (
+          <Modal onClose={closeLightbox}>
+            <Carousel
+            {...commonProps}
+              currentIndex={currentImage}
+              views={photos.map(x => ({
+                ...x,
+                srcset: x.srcSet,
+                caption: x.title
+              }))}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
+    </div>
+  );
+}
+```
+
+### photos.tsx
+
+```
+export const photos = [
+    {
+      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+      width: 1,
+      height: 1
+    },
+    {
+      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      width: 3,
+      height: 4
+    },
+    {
+      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+      width: 3,
+      height: 4
+    },
+    {
+      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+      width: 3,
+      height: 4
+    },
+    {
+      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      width: 3,
+      height: 4
+    },
+    {
+      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+      width: 4,
+      height: 3
+    }
+  ];
+  ```

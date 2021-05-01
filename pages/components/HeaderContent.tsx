@@ -7,11 +7,7 @@ export default class HeaderContent extends React.Component {
                 <div id="header">
                     <div className="row">
                         <div className="col s12" style={{"height":"35em"}}>
-                            <h3 style={{"textAlign": "center",
-                                        "marginTop": "1.66em",
-                                        "color": "white",
-                                        "font-family": "time",
-                                        "line-height": "1.66em"}}>
+                            <h3 className="slogan">
                                         Experience<br />
                                         Knowledge<br />
                                         Commitment<br />
