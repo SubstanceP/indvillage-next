@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default class NavBar extends React.Component {
     render() {
@@ -10,7 +11,7 @@ export default class NavBar extends React.Component {
               </a>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
                 <li><a className="nav-item" href="sass.html">Services</a></li>
-                <li><a className="nav-item" href="badges.html">FAQ</a></li>
+                <li><Link href="../gal.tsx"><a className="nav-item">Gallery</a></Link></li>
                 <li><a className="nav-item" href="collapsible.html">Contact</a></li>
               </ul>
             </div>

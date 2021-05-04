@@ -4,8 +4,6 @@ import { Button } from '@material-ui/core'
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogActions from '@material-ui/core/DialogActions';
-import IconButton from '@material-ui/core/IconButton';
-//import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 
 
@@ -19,7 +17,7 @@ interface CardState {
 }
 
 // Functional Component for Card, instantiating prop and state variables
-export const Card = (props: CardProps, state: CardState) => {
+  const Card = (props: CardProps, state: CardState) => {
   //modalOpen refers to state while setModalOpen is 
   const [modalOpen, setModalOpen] = React.useState(false)
   //
@@ -71,3 +69,5 @@ export const Card = (props: CardProps, state: CardState) => {
     </div>
   )
 }
+
+export default Card

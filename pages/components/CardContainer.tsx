@@ -2,7 +2,7 @@ import axios from 'axios'
 import moment from 'moment'
 import React from 'react'
 import { Button } from '@material-ui/core'
-import { Card } from './Card'
+import Card from './Card'
 
 // TODO: Fix memory leak problem
 // Typing

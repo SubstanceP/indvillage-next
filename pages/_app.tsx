@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import HeaderContent from './components/HeaderContent';
 import CardContainer from './components/CardContainer';
 import ContactForm from './components/ContactForm';
+import SimpleGallery from './components/SimpleGallery';
 
 export default class App extends React.Component {
     render() {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
                     <HeaderContent />
                 </header>
                     <CardContainer />
+                    <SimpleGallery />
                 <footer>
                     <ContactForm />
                 </footer>
