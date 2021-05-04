@@ -19,7 +19,7 @@ interface CardContainerState {
 
 export default class CardContainer extends React.Component<CardContainerProps, CardContainerState> {
     state = {
-        postsUrl: "http://indvillage.com/wp-json/wp/v2/posts",
+        postsUrl: "https://indvillage.com/wp-json/wp/v2/posts",
         queryOptions: {
             per_page: 6,
             page: 1,

@@ -1,6 +1,7 @@
 import React, { InsHTMLAttributes } from 'react';
 import "../styles/globals.css";
 import "../styles/materialize.css"
+import Link from 'next/link'
 
 // Components
 import NavBar from './components/NavBar';
@@ -18,9 +19,9 @@ export default class App extends React.Component {
                     <HeaderContent />
                 </header>
                     <CardContainer />
-                    <SimpleGallery />
                 <footer>
                     <ContactForm />
+                    <SimpleGallery />
                 </footer>
             </React.Fragment>
         )
