@@ -21,7 +21,6 @@ export default class App extends React.Component {
                     <CardContainer />
                 <footer>
                     <ContactForm />
-                    <SimpleGallery />
                 </footer>
             </React.Fragment>
         )
